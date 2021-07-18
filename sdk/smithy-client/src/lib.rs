@@ -6,7 +6,6 @@
 #![warn(
     missing_debug_implementations,
     missing_docs,
-    rustdoc::all,
     rust_2018_idioms
 )]
 
@@ -14,8 +13,6 @@ pub mod bounds;
 pub mod erase;
 pub mod retry;
 
-// https://github.com/rust-lang/rust/issues/72081
-#[allow(rustdoc::private_doc_tests)]
 mod builder;
 pub use builder::Builder;
 
